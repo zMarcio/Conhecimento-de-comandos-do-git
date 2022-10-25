@@ -1,0 +1,66 @@
+Travas de seguranças
+shal ou sha1: trava de segunrança do commit
+blobs trees e commits
+
+Token do git hub:
+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
+
+Comandos do cmd:
+cd: navegar no arquivo
+dir: lista tudo o que tem no arquivo navegado
+mkdir: criar a pasta
+del: excluir o que tem dentro da pasta
+rmdir: exluir a pasta
+
+Comandos do git:
+SÓ ABRIR O GIT BASH DENTRO DA PASTA QUE VC QUEIRA MANDAR
+git add : adiciona a o codigo
+git init : iniciar o processo, ela inicializa o repositorio dentro do git dentro daquela pasta.
+git commit -m "cria pasta receitas, move arquivo para receitas.(UMA MENSAGEM EXEMPLO)": mandar o projeto
+mv: mv strogonoff.html(EXEMPLO:ARQUIVO.) ./receitas/(EXEMPLO:PASTA). Move o arquivo para a pasta que vc quer
+git restore --staged <file>: Caso queira restaurar o que vc.
+git add * : adiciona todos os arquivos working derectory para staged.
+git add . : adiciona todos os arquivos
+git remote add oringin (LINK DA ORIGIN NO GITHUB): vc aponta a origin, ou melhor se empurra para ORIGIN, origin é para onde vai apontar no repositorio do git, e ele ajuda a vc não ficar toda vez colocando o link https do Github.
+git push origin master: Significa que ele está empurrando para github o origin master, o origin master faz referencia ao arquivo "livro-receitas".
+git pull origin master: Significa puxar o codigo do git, direcionando para seu repositorio local, ao qual vc pode modificar e logo apos usar o git push(ACHO QUE AQUI VC TEM DA GIT ADD E GIT COMMIT, DPS DISSO AI SIM GIT PUSH), colocando ele para o git
+git clone LINK DO REPOSITORIO: vc da um pull em um repositorio alheio que vc queira ver, e faz download nele na pasta que o git bash está executando.
+ls -a: mostra repositorios ocultos.
+git remote -v: ele traz repositorios remotos que acabamos de baixar, ele aponta onde os repositorio local está platado
+
+
+Como reescrever email e name no git bash? Login.
+git config --list: comando para olha as configurações do git
+DA UNSET
+git config --global --unset user.email:após esse comando
+git config --global --unset user.name: significa que vc está dando unset no name e no email, fazendo com que vc coloque outros email e name.
+DA SET
+git config --global user.email "(O EMAIL, LEMBRANDO DE QUE É BOM DEIXAR O NOME E O EMAIL IGUAL AO DO GIT)"
+git config --global user.name "(O NOME, LEMBRANDO DE QUE É BOM DEIXAR O NOME E O EMAIL IGUAL AO DO GIT)"
+
+tracked ou untracked:
+unmodified, modified e staged.
+unmodi: ainda não foi modificado;
+modified: foi modificado;
+staged: backstage onde tem gente trabalhando(analogia), existe as pessoas que vão trabalhar, ou seja, são arquivos que vão trabalhar. 
+
+Tracked seria os seguinte serviços unmodified,modified e staged.
+Quando se usa o git add CRIOU O ARQUIVO, então ele estava untracked, usando o git add ele passou a unmodified e a existe pro git, e foi direto pro staged, como se fosse entra em cena.
+Unmodified para modified, significa que alugém modificou, editou o arquivo existente, e como git sabe disso? ele vai ver o sha1, ou seja, a senha do arquivo unmodified, ele vai comparar com o arquivo modified, fazendo com que ele perceba a mudança e colocando o arquivo para modified.
+Unmodified/modified para staged, bom basicamente é como se o arquivo tivesse engatilhado para ser Startado.
+Se o arquivo unmodified for removido ele fica untracked.
+Quando vc coloca os arquivos no staged e da commit, colocando o arquivo em algum canto, o arquivo retorna para undefiend.
+
+
+O que os repósitorios realmente são?
+Local repositorio,staging area e working diretorio. O ambiente de desenvolvimento
+Remote repositorio. Servidor(GitHub).
+
+Quando vc modifica seu codigo no seu ambiente de desenvolvimento, não significa necessariamente que vc mudou no servidor, para modificar no servidor vc precisa fazer varias execução de codigos, para assim vc mudar no Servidor.
+Os arquivos sempre vão fica transitando de staging area e Working directory.
+Quando vc utiliza o comando commit se fala para os arquivos para ir para a sala STAGED, para finalmente ir para local repository.
+Os arquivos tem que tá tudo no local, para ir para o repositorio remotom o github é um exemplo.
+
+Resolvendo Conflitos:
+Quando um arquivo é modificado no github, ou da algum conflito de merge, que é basicamente conflito entre os arquivos, vc tem que da um comando git pull origin master, dentro do arquivo da git bash(NA PASTA QUE VC QUER MODIFICAR O ARQUIVO).
+Quando vc da o pull ele pede para vc modificar ele, voltando ao codigo ele tá com conteudo normal e logo apos ele marca seu codigo(VISIVEL NO BLOCO DE NOTAS A MARCAÇÃO).
